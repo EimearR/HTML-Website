@@ -1,0 +1,61 @@
+<!DOCTYPE=html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Chorus: Create Message</title>
+<link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+
+<body>
+
+<header>
+<h1>Create message</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="Tournaments.html">Tournaments</a></li>
+<li><a class="active" href="#Create.html">Create message</a></li>
+<li><a href="Approve.html">Approve message</a></li>
+<li><a href="Messages.html">Scheduled messages</a></li>
+<li><a href="Templates.html">Templates</a></li>
+<li><a href="Guide.html">User Guide<a></li>
+</ul>
+</nav>
+
+<section>
+<form style="text-align:center;">
+<fieldset>
+<legend>Create message</legend>
+Template:<br>
+<select name="Templates">
+ <option value="short6handed">Short - 6 Handed</option>
+ <option value="short8handed">Short - 8 Handed</option>
+ <option value="ringgame">Ring Game</option>
+ <option value="gameofweek">Game of the Week</option>
+</select><br>
+Tournament ID:<br>
+<input type="text" name="ID"><br>
+Message Type:<br>
+<select name="MessageType">
+ <option value="immediate">Immediate</option>
+ <option value="scheduled">Scheduled</option>
+ <option value="recurring">Recurring</option>
+</select><br>
+Offset minutes:<br>
+<input type="text" name="offset"><br>
+Message:<br>
+<textarea name="message" rows="10" cols="50">
+</textarea><br>
+<input type="submit" value="Post to Twitter">
+</fieldset>
+</form>
+</section>
+
+
+<aside>
+<img src="assets/Choruslogo.png" alt="Chorus Logo" style="width:200px;height:200px;">
+</aside>
+
+</body>
+</html>
